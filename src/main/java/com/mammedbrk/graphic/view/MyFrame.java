@@ -1,11 +1,11 @@
 package com.mammedbrk.graphic.view;
 
-import config.Config;
+import com.mammedbrk.config.Config;
 
 import javax.swing.*;
 import java.awt.*;
 
-public final class MyFrame extends JFrame {
+public class MyFrame extends JFrame {
     public MyFrame() {
         int screenWidth, screenHeight, windowWidth, windowHeight;
         screenWidth = Toolkit.getDefaultToolkit().getScreenSize().width;

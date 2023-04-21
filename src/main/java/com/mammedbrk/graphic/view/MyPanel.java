@@ -1,21 +1,14 @@
 package com.mammedbrk.graphic.view;
 
-import config.Config;
-import view.graphicalmodel.GraphicalGame;
+import com.mammedbrk.config.Config;
+import com.mammedbrk.graphic.graphicalmodel.GraphicalGame;
 
 import javax.swing.*;
 import java.awt.*;
 
-public final class MyPanel extends JPanel {
-    private static MyPanel instance;
+public class MyPanel extends JPanel {
     private GraphicalGame graphicalGame;
     private final String color;
-
-    public static MyPanel getInstance() {
-        if (instance == null)
-            instance = new MyPanel();
-        return instance;
-    }
 
     public MyPanel() {
         color = Config.getInstance().getProperty("panelColor");
