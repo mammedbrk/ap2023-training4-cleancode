@@ -21,7 +21,7 @@ public class MyPanel extends JPanel {
         this.setBackground(Color.decode(color));
 
         int windowHeight = graphicalGame.getBoard().getHeight();
-        g.drawString("Player turn: " + (Config.getInstance().getProperty("colorPlayer" + graphicalGame.getCurrentPlayer() + "Name")), 0, windowHeight + 15);
+        g.drawString("Player turn: " + (Config.getInstance().getProperty("colorPlayer" + graphicalGame.getCurrentPlayer() + "Name")), 5, windowHeight + 15);
 
         graphicalGame.getBoard().paint((Graphics2D) g);
     }
